@@ -22,6 +22,12 @@ export default function DressCodePage() {
             <img src="/dresscode.png" alt="SOLIDUM 2026 Dress Code Moodboard" className="w-full max-w-[620px] h-auto border border-[#c5a254]/30" />
           </div>
         </div>
+
+        <div className="mt-12 text-center">
+          <Link href="/rsvp" className="shimmer inline-block bg-gradient-to-r from-[#6a0d1a] to-[#8b1a2b] border border-[#c5a254]/50 px-12 py-5 text-base tracking-[0.25em] text-white hover:from-[#7a1020] hover:to-[#9b1d30] transition">
+            RESERVE YOUR SEAT — RSVP
+          </Link>
+        </div>
       </main>
     </div>
   );
