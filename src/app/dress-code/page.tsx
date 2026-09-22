@@ -9,7 +9,7 @@ export default function DressCodePage() {
         <Link href="/" className="text-sm tracking-widest text-[#c0c0c0] hover:text-[#c5a254]">← BACK TO HOME</Link>
       </header>
 
-      <main className="max-w-3xl mx-auto px-6 py-10">
+      <main className="max-w-6xl mx-auto px-6 py-10">
         <div className="text-center mb-8">
           <p className="text-sm lg:text-base tracking-[0.4em] text-[#c0c0c0]/60">CASINO ROYALE MASQUERADE</p>
           <h1 className="font-serif text-4xl lg:text-5xl tracking-[0.15em] mt-2">THE DRESS CODE</h1>
@@ -19,7 +19,7 @@ export default function DressCodePage() {
 
         <div className="flex justify-center">
           <div className="bg-[#141414] border border-[#c5a254]/20 p-4 lg:p-6">
-            <img src="/dresscode.png" alt="SOLIDUM 2026 Dress Code Moodboard" className="w-full max-w-[620px] h-auto border border-[#c5a254]/30" />
+            <img src="/dresscode.png" alt="SOLIDUM 2026 Dress Code Moodboard" className="w-[82vw] max-w-[1400px] h-auto border border-[#c5a254]/30" />
           </div>
         </div>
 
