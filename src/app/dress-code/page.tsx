@@ -23,6 +23,24 @@ export default function DressCodePage() {
           </div>
         </div>
 
+        <div className="mt-10">
+          <p className="text-center text-sm tracking-[0.2em] text-[#c5a254]">THE PALETTE</p>
+          <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { name: "BURGUNDY", hex: "#6a0d1a", swatch: "#6a0d1a" },
+              { name: "BLACK", hex: "#0a0a0a", swatch: "#0a0a0a" },
+              { name: "SILVER", hex: "#c0c0c0", swatch: "#c0c0c0" },
+              { name: "GOLD", hex: "#c5a254", swatch: "#c5a254" },
+            ].map((c) => (
+              <div key={c.name} className="bg-[#141414] border border-[#c0c0c0]/15 p-4 text-center">
+                <div className="h-20 w-full border border-[#c0c0c0]/20" style={{ backgroundColor: c.swatch }} />
+                <p className="mt-3 text-sm tracking-[0.2em] text-[#faf7f2]">{c.name}</p>
+                <p className="text-xs font-mono text-[#c0c0c0]/50 mt-1">{c.hex}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
           <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">CASINO ROYALE</span>
           <span className="text-[#c5a254] hidden sm:inline">•</span>
