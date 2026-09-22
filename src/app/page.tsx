@@ -79,7 +79,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-[#c5a254]/10 py-6 text-center text-sm tracking-widest text-[#c0c0c0]/40">
-        SOLIDUM 2026 — CASINO ROYALE MASQUERADE • BLACK • BURGUNDY • SILVER • GOLD
+        Copyright UMCLE-SC SOLIDUM 2026
       </footer>
     </div>
   );
