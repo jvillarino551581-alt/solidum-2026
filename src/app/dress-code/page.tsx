@@ -10,16 +10,9 @@ export default function DressCodePage() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-10">
-        <div className="text-center mb-8">
-          <p className="text-sm lg:text-base tracking-[0.4em] text-[#c0c0c0]/60">CASINO ROYALE MASQUERADE</p>
-          <h1 className="font-serif text-4xl lg:text-5xl tracking-[0.15em] mt-2">THE DRESS CODE</h1>
-          <div className="mx-auto mt-4 h-px w-24 bg-[#c5a254]/40" />
-          <p className="text-base text-[#c0c0c0]/70 mt-4">Dress to impress — here is the official reference for the evening.</p>
-        </div>
-
         <div className="flex justify-center">
           <div className="bg-[#141414] border border-[#c5a254]/20 p-4 lg:p-6">
-            <img src="/dresscode.png" alt="SOLIDUM 2026 Dress Code Moodboard" className="w-[82vw] max-w-[1400px] h-auto border border-[#c5a254]/30" />
+            <img src="/dresscode.png" alt="SOLIDUM 2026 Dress Code Moodboard" className="w-[85vw] max-w-[1400px] h-auto border border-[#c5a254]/30" />
           </div>
         </div>
 
