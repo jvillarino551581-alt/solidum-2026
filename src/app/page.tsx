@@ -13,6 +13,7 @@ export default function Home() {
           <span className="font-serif tracking-[0.3em] text-lg text-[#c5a254]">SOLIDUM</span>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-[0.2em] text-[#c0c0c0]">
+          <Link href="/dress-code" className="hover:text-[#c5a254] transition">DRESS CODE</Link>
           <Link href="/rsvp" className="hover:text-[#c5a254] transition">RSVP</Link>
           <Link href="/myqr" className="hover:text-[#c5a254] transition">MY QR</Link>
           <Link href="/login" className="hover:text-[#c5a254] transition">STAFF LOGIN</Link>
@@ -71,6 +72,8 @@ export default function Home() {
         </Link>
 
         <div className="mt-10 flex items-center gap-6 text-sm tracking-widest text-[#c0c0c0]/50">
+          <Link href="/dress-code" className="text-[#c5a254] hover:text-[#e8c77a] underline underline-offset-4">DRESS CODE</Link>
+          <span className="text-[#c5a254]">•</span>
           <span>BLACK TIE</span>
           <span className="text-[#c5a254]">•</span>
           <span>MASQUERADE REQUIRED</span>
