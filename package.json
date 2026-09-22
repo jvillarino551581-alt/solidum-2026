@@ -10,13 +10,12 @@
   },
   "dependencies": {
     "firebase-admin": "^13.10.0",
-    "googleapis": "^178.0.0",
     "html5-qrcode": "^2.3.8",
-    "next": "^15.3.5",
+    "next": "^15.5.9",
     "nodemailer": "^10.0.10",
     "qrcode": "^1.5.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
     "uuid": "^14.0.2"
   },
   "devDependencies": {
@@ -28,7 +27,7 @@
     "@types/react-dom": "^19",
     "@types/uuid": "^10.0.0",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^15.3.5",
+    "eslint-config-next": "^15.5.9",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
