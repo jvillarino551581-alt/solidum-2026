@@ -55,9 +55,6 @@ export default function Home() {
           Step onto the red carpet. Don your finest mask. An unforgettable night of glamour, chance, and celebration awaits.
         </p>
 
-        {/* Mask ornament */}
-        <div className="mt-8 text-[#c5a254]/30 text-4xl">🎭</div>
-
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Link
             href="/rsvp"
@@ -72,11 +69,9 @@ export default function Home() {
         </Link>
 
         <div className="mt-10 flex items-center gap-6 text-sm tracking-widest text-[#c0c0c0]/50">
-          <Link href="/dress-code" className="text-[#c5a254] hover:text-[#e8c77a] underline underline-offset-4">DRESS CODE</Link>
+          <span>CASINO ROYALE</span>
           <span className="text-[#c5a254]">•</span>
-          <span>BLACK TIE</span>
-          <span className="text-[#c5a254]">•</span>
-          <span>MASQUERADE REQUIRED</span>
+          <span>MASQUERADE</span>
           <span className="text-[#c5a254]">•</span>
           <span>RED CARPET</span>
         </div>

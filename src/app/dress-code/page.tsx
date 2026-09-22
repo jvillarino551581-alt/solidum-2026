@@ -24,9 +24,9 @@ export default function DressCodePage() {
         </div>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">BLACK TIE</span>
+          <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">CASINO ROYALE</span>
           <span className="text-[#c5a254] hidden sm:inline">•</span>
-          <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">MASQUERADE REQUIRED</span>
+          <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">MASQUERADE</span>
           <span className="text-[#c5a254] hidden sm:inline">•</span>
           <span className="border border-[#c0c0c0]/20 px-6 py-3 text-sm tracking-widest text-[#c0c0c0]/70">RED CARPET</span>
         </div>
