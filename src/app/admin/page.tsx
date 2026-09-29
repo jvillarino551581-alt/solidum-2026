@@ -102,7 +102,7 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
                     <tr key={r.uuid} className={isChecked ? "bg-green-900/10" : "bg-[#0a0a0a]"}>
                       <td className="px-4 py-3 text-[#faf7f2]">{r.name}</td>
                       <td className="px-4 py-3 text-[#c0c0c0]/70">{r.yearLevel}</td>
-                      <td className="px-4 py-3 font-mono text-sm text-[#c5a254]">{r.idNumber}</td>
+                      <td className="px-4 py-3 font-mono text-sm text-[#c5a254]">{r.idNumber || "—"}</td>
                       <td className="px-4 py-3 text-sm text-[#c0c0c0]/60">{r.email}</td>
                       <td className="px-4 py-3 text-sm text-[#c0c0c0]/60">{r.allergens || "—"}</td>
                       <td className="px-4 py-3"><span className={`px-2 py-1 text-sm tracking-widest border ${isChecked ? "border-green-700 text-green-300 bg-green-900/20" : "border-[#c0c0c0]/20 text-[#c0c0c0]/50"}`}>{isChecked ? "PRESENT" : "NOT YET"}</span></td>

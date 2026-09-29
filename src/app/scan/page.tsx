@@ -280,7 +280,7 @@ export default function ScanPage() {
                     <tr key={a.uuid} className={a.checkInTime ? "bg-green-900/10" : "bg-[#0a0a0a]"}>
                       <td className="px-4 py-2 text-[#faf7f2]">{a.name}</td>
                       <td className="px-4 py-2 text-[#c0c0c0]/70">{a.yearLevel}</td>
-                      <td className="px-4 py-2 font-mono text-xs text-[#c5a254]">{a.idNumber}</td>
+                      <td className="px-4 py-2 font-mono text-xs text-[#c5a254]">{a.idNumber || "—"}</td>
                       <td className="px-4 py-2">
                         <span className={`px-2 py-0.5 text-xs tracking-widest border ${a.checkInTime ? "border-green-700 text-green-300 bg-green-900/20" : "border-[#c0c0c0]/20 text-[#c0c0c0]/50"}`}>
                           {a.checkInTime ? "PRESENT" : "NOT YET"}

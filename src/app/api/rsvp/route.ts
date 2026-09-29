@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     const { name, yearLevel, email, idNumber, allergens } = body;
 
     // Validation
-    if (!name || !yearLevel || !email || !idNumber) {
+    if (!name || !yearLevel || !email) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
     if (!["1st Year", "2nd Year", "3rd Year", "4th Year", "Faculty / Staff"].includes(yearLevel)) {
@@ -19,7 +19,8 @@ export async function POST(req: Request) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
-    if (!/^[A-Z0-9]{6}$/i.test(String(idNumber).trim())) {
+    const idClean = String(idNumber || "").trim();
+    if (idClean && !/^[A-Z0-9]{6}$/i.test(idClean)) {
       return NextResponse.json({ error: "ID Number must be exactly 6 characters (e.g. 000001)" }, { status: 400 });
     }
 
@@ -27,8 +28,10 @@ export async function POST(req: Request) {
     try {
       const dupEmail = await findRSVPByEmail(email);
       if (dupEmail) return NextResponse.json({ error: "Email already registered" }, { status: 409 });
-      const dupId = await findRSVPByIdNumber(idNumber);
-      if (dupId) return NextResponse.json({ error: "ID Number already registered" }, { status: 409 });
+      if (idClean) {
+        const dupId = await findRSVPByIdNumber(idClean);
+        if (dupId) return NextResponse.json({ error: "ID Number already registered" }, { status: 409 });
+      }
     } catch (e) {
       // If Firebase not configured (no env), allow but warn
       if ((e as Error).message.includes("Missing")) {
@@ -52,7 +55,7 @@ export async function POST(req: Request) {
         name: String(name).trim(),
         yearLevel,
         email: String(email).trim().toLowerCase(),
-        idNumber: String(idNumber).trim(),
+        idNumber: idClean,
         allergens: allergenStr,
         qrToken: verifyUrl,
         emailSent: "pending",

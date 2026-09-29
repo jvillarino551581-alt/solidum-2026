@@ -86,8 +86,8 @@ export default function RSVPPage() {
             </div>
             <div>
               <label className="text-sm tracking-[0.2em] text-[#c5a254]">ID NUMBER</label>
-              <input required value={form.idNumber} onChange={(e) => setForm({ ...form, idNumber: e.target.value })} placeholder="XXXXXX" className="mt-2 w-full bg-[#0a0a0a] border border-[#c0c0c0]/20 px-4 py-3 text-base text-[#faf7f2] placeholder:text-[#c0c0c0]/30 focus:border-[#c5a254]/60 outline-none" />
-              <p className="text-sm text-[#c0c0c0]/40 mt-1">Unique 6-digit ID — used for check-in verification</p>
+              <input value={form.idNumber} onChange={(e) => setForm({ ...form, idNumber: e.target.value })} placeholder="XXXXXX (optional)" className="mt-2 w-full bg-[#0a0a0a] border border-[#c0c0c0]/20 px-4 py-3 text-base text-[#faf7f2] placeholder:text-[#c0c0c0]/30 focus:border-[#c5a254]/60 outline-none" />
+              <p className="text-sm text-[#c0c0c0]/40 mt-1">Optional — 6-digit student ID. Faculty/Staff may leave blank.</p>
             </div>
           </div>
 
